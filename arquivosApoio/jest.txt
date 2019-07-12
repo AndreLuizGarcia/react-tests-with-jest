@@ -1,0 +1,49 @@
+Jest
+
+Porque testar?
+Basicamente você cria testes para garantir que uma alteraçao no código não altere outra parte do código, sem que você perceba.
+
+npx jest --coverage
+
+npm run test -- --coverage
+
+
+
+shallow is broken in jest 24 =>
+use https://github.com/adriantoine/enzyme-to-json to this work
+
+
+after create-react-app
+
+npm run eject
+
+
+
+
+package.json => 
+
+"jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+...
+}    "setupFiles": [
+      "react-app-polyfill/jsdom",
+      "<rootDir>/config/polyfills.js",
+      "<rootDir>/__tests__/setup.js"
+    ],
+
+    "testMatch": [
+      "**/?(*.)(spec|test).js?(x)"
+    ],
+
+
+
+npm install 
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+
+
+folder config
+     polyfills.js
