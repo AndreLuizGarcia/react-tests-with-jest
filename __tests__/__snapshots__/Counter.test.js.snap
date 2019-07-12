@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Counter Component render correctly 1`] = `
+<div
+  className="Counter"
+>
+  <h2>
+    Você tem 
+    5
+     counters;
+  </h2>
+</div>
+`;
